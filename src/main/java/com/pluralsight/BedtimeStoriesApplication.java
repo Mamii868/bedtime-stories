@@ -28,6 +28,8 @@ public class BedtimeStoriesApplication {
                 currentLineNumber++;
             }
 
+            bufferedReader.close();
+
         } catch (Exception e) {
             System.out.println("Error occurred");
         }
