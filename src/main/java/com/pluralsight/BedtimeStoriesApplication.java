@@ -11,6 +11,10 @@ public class BedtimeStoriesApplication {
             System.out.println("Enter the name of a story: ");
             String storyName = scanner.nextLine().toLowerCase() + ".txt";
 
+            if(storyName.contains(" ")) {
+                storyName = storyName.replace(" ", "_");
+            }
+
             FileReader fileReader = new FileReader(storyName);
 
             BufferedReader bufferedReader = new BufferedReader(fileReader);
